@@ -20,7 +20,7 @@ features:
   - icon: 📝
     title: Se concentrer sur le contenu
     details: Créez facilement de superbes sites web de documents en utilisant uniquement Markdown
-  - icon: 
+  - icon:
       dark: /vitepress.png
       light: /vitepress-light.png
     title: Appréciez Vite DX
@@ -35,7 +35,4 @@ features:
 
 <HomeUnderline />
 
-<confetti />
-
 <busuanzi />
-

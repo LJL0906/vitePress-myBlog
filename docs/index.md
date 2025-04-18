@@ -1,13 +1,13 @@
 ---
 layout: home
 
-title: VitePress
-titleTemplate: 快速上手中文教程
+title: 大头笔记
+titleTemplate: 温故而知新，干中学！
 
 hero:
-  name: VitePress
-  text: "快速上手中文教程"
-  tagline: 如果你也想搭建它，那跟我一起做吧
+  name: 干中学!
+  text: "温故而知新"
+  tagline: 学到老, 活到老
   image:
     src: /logo.png
     alt: VitePress
@@ -26,7 +26,7 @@ features:
   - icon: 📝
     title: 专注于您的内容
     details: 只需使用 Markdown 即可轻松创建精美的文档网站
-  - icon: 
+  - icon:
       dark: /vitepress.png
       light: /vitepress-light.png
     title: 享受Vite DX
@@ -43,7 +43,4 @@ features:
 
 <HomeUnderline />
 
-<confetti />
-
 <busuanzi />
-

@@ -35,7 +35,6 @@ features:
 
 <HomeUnderline />
 
-<confetti />
 
 <busuanzi />
 

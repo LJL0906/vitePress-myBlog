@@ -1,7 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 
 // giscusTalk
-import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+import giscusTalk from 'vitepress-plugin-comment-with-giscus'
 // 进度条
 import { NProgress } from 'nprogress-v2/dist/index.js'
 // 样式
@@ -10,23 +10,21 @@ import 'virtual:group-icons.css' //代码组样式
 import './style/index.css' //自定义样式
 
 import { h } from 'vue' // h函数
-import { useData , useRoute } from 'vitepress'
+import { useData, useRoute } from 'vitepress'
 // mediumZoom
-import mediumZoom from 'medium-zoom';
-import { onMounted, watch, nextTick } from 'vue';
+import mediumZoom from 'medium-zoom'
+import { onMounted, watch, nextTick } from 'vue'
 
 
 // 组件
 import MNavLinks from './components/MNavLinks.vue' //导航
 import HomeUnderline from "./components/HomeUnderline.vue" // 首页下划线
-import confetti from "./components/confetti.vue" // 五彩纸屑
 import update from "./components/update.vue" // 更新时间
 import xgplayer from "./components/xgplayer.vue" //西瓜播放器
 import ArticleMetadata from "./components/ArticleMetadata.vue" //字数阅读时间
 import Linkcard from "./components/Linkcard.vue" //链接卡片
 import MyLayout from "./components/MyLayout.vue" //视图过渡
 import backtotop from "./components/backtotop.vue" //返回顶部
-import notice from "./components/notice.vue" //公告
 import fluidborder from "./components/fluidborder.vue" //流体边框仅用于演示
 import MouseClick from "./components/MouseClick.vue"
 import MouseFollower from "./components/MouseFollower.vue"
@@ -42,16 +40,15 @@ let homePageStyle: HTMLStyleElement | undefined
 export default {
   extends: DefaultTheme,
 
-  enhanceApp({app , router }) {
+  enhanceApp({ app, router }) {
     // 注册全局组件
-    app.component('MNavLinks' , MNavLinks) //导航
-    app.component('HomeUnderline' , HomeUnderline) // 首页下划线
-    app.component('confetti' , confetti) // 五彩纸屑
-    app.component('update' , update) // 更新
-    app.component('xgplayer' , xgplayer) //西瓜播放器
-    app.component('ArticleMetadata' , ArticleMetadata) //字数阅读时间
-    app.component('Linkcard' , Linkcard) //链接卡片
-    app.component('fluidborder' , fluidborder) //流体边框仅用于演示
+    app.component('MNavLinks', MNavLinks) //导航
+    app.component('HomeUnderline', HomeUnderline) // 首页下划线
+    app.component('update', update) // 更新
+    app.component('xgplayer', xgplayer) //西瓜播放器
+    app.component('ArticleMetadata', ArticleMetadata) //字数阅读时间
+    app.component('Linkcard', Linkcard) //链接卡片
+    app.component('fluidborder', fluidborder) //流体边框仅用于演示
     app.component('MouseClick', MouseClick) //鼠标跟随组件
     app.component('MouseFollower', MouseFollower) //鼠标跟随组件
 
@@ -62,9 +59,9 @@ export default {
         NProgress.start() // 开始进度条
       }
       router.onAfterRouteChange = () => {
-         busuanzi.fetch()
-         NProgress.done() // 停止进度条
-       }
+        busuanzi.fetch()
+        NProgress.done() // 停止进度条
+      }
     }
 
     // 彩虹背景动画样式
@@ -89,32 +86,26 @@ export default {
       props.class = frontmatter.value.layoutClass
     }
 
-    // return h(DefaultTheme.Layout, props, {
-    //   'layout-bottom': () => h(bsz), //不蒜子layout-bottom插槽
-    //   'doc-footer-before': () => h(backtotop), // 返回顶部doc-footer-before插槽
-    //   'layout-top': () => h(notice), // 公告layout-top插槽
-    // })
-
-    return h(MyLayout,props)
+    return h(MyLayout, props)
   },
-  
+
   // medium-zoom
   setup() {
-    const route = useRoute();
+    const route = useRoute()
     const initZoom = () => {
       // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
-      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
-    };
+      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }) // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+    }
     onMounted(() => {
-      initZoom();
-    });
+      initZoom()
+    })
     watch(
       () => route.path,
       () => nextTick(() => initZoom())
-    );
+    )
 
     // giscus
-    const { frontmatter } = useData();
+    const { frontmatter } = useData()
 
     // giscus配置
     giscusTalk({
@@ -125,7 +116,7 @@ export default {
       mapping: 'pathname',
       inputPosition: 'bottom',
       lang: 'zh-CN',
-      }, 
+    },
       {
         frontmatter, route
       },
@@ -133,7 +124,7 @@ export default {
       //如果为false，则表示未启用
       //您可以使用“comment:true”序言在页面上单独启用它
       true
-    );
+    )
 
   },
 

@@ -3,12 +3,12 @@ import { defineConfig } from 'vitepress'
 import { devDependencies } from '../../package.json'
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
-import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
+import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: "VitePress",
-  description: "我的vitpress文档教程",
+  title: "大头笔记",
+  description: "我的大头笔记",
 
   // #region fav
   head: [
@@ -28,16 +28,6 @@ export default defineConfig({
     root: {
       label: '简体中文',
       lang: 'Zh_CN',
-    },
-    en: {
-      label: 'English',
-      lang: 'en',
-      link: '/en/',
-    },
-    fr: {
-      label: 'French',
-      lang: 'fr',
-      link: '/fr/',
     }
   },
 
@@ -47,7 +37,7 @@ export default defineConfig({
     lineNumbers: true,
 
     // toc显示一级标题
-    toc: {level: [1,2,3]},
+    toc: { level: [1, 2, 3] },
 
     // 使用 `!!code` 防止转换
     codeTransformers: [
@@ -71,9 +61,9 @@ export default defineConfig({
         return htmlResult
       },
 
-      md.use(groupIconMdPlugin) //代码组图标
+        md.use(groupIconMdPlugin) //代码组图标
       md.use(markdownItTaskCheckbox) //todo
-      md.use(MermaidMarkdown); 
+      md.use(MermaidMarkdown)
 
     }
 
