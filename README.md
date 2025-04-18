@@ -1,4 +1,4 @@
-## VitePress 学习笔记与个人博客
+# VitePress 学习笔记与个人博客
 
 本项目使用 VitePress 搭建，旨在记录个人的学习笔记和技术思考。
 
@@ -6,7 +6,7 @@
 
 ## 快速开始
 
-**开发环境运行**
+## 开发环境运行\*\*
 
 ```bash
 npm run docs:dev
@@ -16,7 +16,7 @@ yarn docs:dev
 pnpm docs:dev
 ```
 
-**构建静态站点**
+## 构建静态站点\*\*
 
 ```bash
 npm run docs:build
@@ -26,7 +26,7 @@ yarn docs:build
 pnpm docs:build
 ```
 
-**本地预览构建后的站点**
+## 本地预览构建后的站点\*\*
 
 ```bash
 npm run docs:preview
