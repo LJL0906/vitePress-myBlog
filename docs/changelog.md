@@ -40,18 +40,18 @@ next: false
 
 ## 2025-2-22
 
-- 新增 [流程图插件vitepress-plugin-mermaid](./plugin.md#mermaid) ([pull#47](https://github.com/Yiov/vitepress-doc/pull/47))
+- 新增 [流程图插件vitepress-plugin-mermaid](./plugin.md#mermaid) ([pull#47](https://github.com/LJL0906/vitePress-myBlog/pull/47))
 
-- 新增 [鼠标粒子效果插件](./components.md#鼠标粒子效果) ([pull#48](https://github.com/Yiov/vitepress-doc/pull/48))
+- 新增 [鼠标粒子效果插件](./components.md#鼠标粒子效果) ([pull#48](https://github.com/LJL0906/vitePress-myBlog/pull/48))
 
 - 关掉首页 [彩虹背景动画](./style.md#彩虹背景动画)，被卡哭了
 
 
 ## 2025-2-12
 
-- 修复导航布局问题导致的样式污染 ([issues#45](https://github.com/Yiov/vitepress-doc/issues/45))
+- 修复导航布局问题导致的样式污染 ([issues#45](https://github.com/LJL0906/vitePress-myBlog/issues/45))
 
-- 更新 [todo插件](./plugin.md#todo) 最新用法 ([pull#46](https://github.com/Yiov/vitepress-doc/pull/46))
+- 更新 [todo插件](./plugin.md#todo) 最新用法 ([pull#46](https://github.com/LJL0906/vitePress-myBlog/pull/46))
 
 - 分离 [容器流体边框教程](./style-fluidborder.md)
 

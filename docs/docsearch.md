@@ -699,7 +699,7 @@ export default defineConfig({
 ```
 
 
-最后将所有页面添加完后，[对比文件](https://github.com/Yiov/vitepress-doc/blob/main/docsearch.json)，看效果
+最后将所有页面添加完后，[对比文件](https://github.com/LJL0906/vitePress-myBlog/blob/main/docsearch.json)，看效果
 
 ::: tip 说明
 如果你的页面很多，额，那是真的有点麻烦，可以不美化
