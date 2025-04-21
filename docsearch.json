@@ -2,121 +2,12 @@
     "index_name": "doc",
     "start_urls": [
         {
-            "url": "https://vitepress.yiov.top/preface.html",
+            "url": "https://www.ljianl.com/",
             "selectors_key": "preface",
             "tags": [
                 "preface"
             ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/getting-started.html",
-            "selectors_key": "getting-started",
-            "tags": [
-                "getting-started"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/configuration.html",
-            "selectors_key": "configuration",
-            "tags": [
-                "configuration"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/page.html",
-            "selectors_key": "page",
-            "tags": [
-                "page"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/frontmatter.html",
-            "selectors_key": "frontmatter",
-            "tags": [
-                "frontmatter"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/markdown.html",
-            "selectors_key": "markdown",
-            "tags": [
-                "markdown"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/team.html",
-            "selectors_key": "team",
-            "tags": [
-                "team"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/multi-language.html",
-            "selectors_key": "multi-language",
-            "tags": [
-                "multi-language"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/docsearch.html",
-            "selectors_key": "docsearch",
-            "tags": [
-                "docsearch"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/assets.html",
-            "selectors_key": "assets",
-            "tags": [
-                "assets"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/style.html",
-            "selectors_key": "style",
-            "tags": [
-                "style"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/components.html",
-            "selectors_key": "components",
-            "tags": [
-                "components"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/layout.html",
-            "selectors_key": "layout",
-            "tags": [
-                "layout"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/plugin.html",
-            "selectors_key": "plugin",
-            "tags": [
-                "plugin"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/update.html",
-            "selectors_key": "update",
-            "tags": [
-                "update"
-            ]
-        },
-        {
-            "url": "https://vitepress.yiov.top/nav/",
-            "selectors_key": "nav",
-            "tags": [
-                "nav"
-            ]
-        },
-        "https://vitepress.yiov.top/"
-    ],
-    "stop_urls": [
-        "https://vitepress.yiov.top/nav/mao.html"
+        }
     ],
     "selectors": {
         "preface": {
