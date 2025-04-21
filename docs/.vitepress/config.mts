@@ -220,8 +220,8 @@ export default defineConfig({
     search: {
       provider: 'algolia',
       options: {
-        appId: 'QVKQI62L15',
-        apiKey: 'bef8783dde57293ce082c531aa7c7e0c',
+        appId: '33DNVISZMX',
+        apiKey: '1b258c81570fa073f55086f7984cbc21',
         indexName: 'doc',
         locales: {
           root: {
